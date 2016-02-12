@@ -13,7 +13,6 @@ services:
   - mongodb
 script:
   - meteor --test
-  - sleep 50
 notifications:
   slack:
     rooms:
