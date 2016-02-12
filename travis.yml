@@ -1,15 +1,16 @@
+sudo: required  
 language: node_js
-notifications:
-  slack:
-    rooms:
-      - metroidhq:PZZ19xv8VA3fRpveiBcPA1oU#website-development
-    on_success: always
-    on_failure: always
 node_js:
-  - "0.10"
+  - '0.12'
 before_install:
-  - "curl -L http://git.io/3l-rRA | /bin/sh"
+  - curl https://install.meteor.com/ | sh
 services:
   - mongodb
 script:
-  - meteor --test --release velocity:METEOR@1.1.0.2_2
+  - meteor --test --release velocity:METEOR@1.1.0.2_3
+notifications:
+  slack:
+    rooms:
+      - metroidhq:PZZ19xv8VA3fRpveiBcPA1oU
+    on_success: always
+    on_failure: always
