@@ -20,11 +20,9 @@ before_install:
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
   # install meteor
   - "curl https://install.meteor.com | /bin/sh"
-  # run meteor
-  - "meteor reset"
-  - "meteor --test -p 3000 &"
-  # give Meteor some time to download packages, init data, and to start
-  - "sleep 50"
+
+script:
+  bash build.sh
 
 notifications:
   slack:
