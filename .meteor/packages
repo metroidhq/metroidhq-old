@@ -44,5 +44,4 @@ babrahams:temple             # View current templates
 jboulhous:dev                # Allows for dev-only code
 
 # Testing
-mike:mocha                   # Velocity Mocha test framework
-velocity:console-reporter    # Console reporting for Velocity
+mike:mocha                   # Mocha Velocity testing framework
