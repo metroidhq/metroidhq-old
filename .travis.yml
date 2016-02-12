@@ -1,4 +1,4 @@
-sudo: required  
+sudo: required
 language: node_js
 node_js:
   - '0.12'
@@ -7,7 +7,7 @@ before_install:
 services:
   - mongodb
 script:
-  - meteor --test --release velocity:METEOR@1.1.0.2_3
+  - meteor
 notifications:
   slack:
     rooms:
