@@ -1,0 +1,48 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# Meteor Packages
+meteor-base                  # Packages every Meteor app needs to have
+mongo                        # The database Meteor supports right now
+session                      # Client-side reactive dictionary for your app
+tracker                      # Meteor's client-side reactive programming library
+es5-shim                     # ECMAScript 5 compatibility for older browsers.
+ecmascript                   # Enable ECMAScript2015+ syntax in app code
+
+# Compilers
+blaze-html-templates         # Compile .html files into Meteor Blaze views
+standard-minifiers           # JS/CSS minifiers run for production mode
+coffeescript                 # Javascript preprocessor
+fourseven:scss               # CSS preprocessor
+mquandalle:jade              # HTML preprocessor
+
+# Utilities
+kadira:flow-router           # Makes URLs happen
+kadira:blaze-layout          # Template render manager
+aldeed:collection2           # Defines database schemas
+meteorhacks:fast-render      # Renders initial content BLAZEing fast. ha.
+momentjs:moment              # Relational time
+sach:flow-db-admin           # Flow-Router version of the admin panel
+
+# Style Libraries
+fortawesome:fontawesome      # Awesome Fonts
+
+# Accounts & management
+accounts-password            # Enables passwords
+useraccounts:bootstrap       # Styles account feilds for bootstrap
+useraccounts:flow-routing    # Routes login pages through Flow-Router
+
+# Development
+constellation:console        # Dev Mongo sniffing
+constellation:position       # Set Constellation position
+constellation:session        # Sev Session sniffing
+constellation:subscriptions  # View current subscriptions
+babrahams:temple             # View current templates
+jboulhous:dev                # Allows for dev-only code
+
+# Testing
+mike:mocha                   # Velocity Mocha test framework
+velocity:console-reporter    # Console reporting for Velocity
