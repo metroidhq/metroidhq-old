@@ -2,7 +2,7 @@ language: node_js
 notifications:
   slack:
     rooms:
-    - metroidhq:PZZ19xv8VA3fRpveiBcPA1oU#website-development
+      - metroidhq:PZZ19xv8VA3fRpveiBcPA1oU#website-development
     on_success: always
     on_failure: always
 node_js:
