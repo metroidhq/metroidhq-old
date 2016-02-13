@@ -2,6 +2,10 @@ sudo: required
 language: node_js
 node_js:
   - '0.12'
+branches:
+  only:
+    - master
+    - devel
 before_install:
   # fire up xvfb on port :99.0
   - "export DISPLAY=:99.0"
