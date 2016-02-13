@@ -21,8 +21,3 @@ PageComments.attachSchema new SimpleSchema
         type: Boolean
         label: 'Archived'
         defaultValue: false
-
-    # count:
-    #     type: Number
-    #     label: 'Count'
-    #     optional: true
