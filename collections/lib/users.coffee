@@ -2,12 +2,10 @@ Meteor.users.attachSchema new SimpleSchema
     username:
         type: String
         label: 'Username'
-        optional: true
 
     emails:
         type: Array
         label: 'Emails'
-        optional: true
 
     'emails.$':
         type: Object
@@ -21,6 +19,12 @@ Meteor.users.attachSchema new SimpleSchema
     'emails.$.verified':
         type: Boolean
         label: 'Email Verified'
+        defaultValue: false
+
+    'emails.$.primary':
+        type: Boolean
+        label: 'Primary Email'
+        defaultValue: false
 
     firstName:
         type: String

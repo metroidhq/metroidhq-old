@@ -17,6 +17,11 @@ PageComments.attachSchema new SimpleSchema
         label: 'Created At'
         defaultValue: new Date()
 
+    archived:
+        type: Boolean
+        label: 'Archived'
+        defaultValue: false
+
     # count:
     #     type: Number
     #     label: 'Count'
