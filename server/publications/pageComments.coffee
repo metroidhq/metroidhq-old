@@ -15,14 +15,14 @@ Meteor.publish 'pageComments', (pageIds) ->
 
                 # Publish Comments for All Passed Pages
                 PageComments.find
-                    page:
+                    pageId:
                         $in: pageIds
 
             else
 
                 # Publish Comments for Page
                 PageComments.find
-                    page: pageIds
+                    pageId: pageIds
 
         else
 
@@ -31,11 +31,11 @@ Meteor.publish 'pageComments', (pageIds) ->
                 
                 # Publish Comments for All Passed Pages That are Owned by the User or Unarchived
                 PageComments.find
-                    page:
+                    pageId:
                         $in: pageIds
 
                     $or: [
-                            user: @userId
+                            userId: @userId
                         ,
                             archived: false
                     ]
@@ -45,10 +45,10 @@ Meteor.publish 'pageComments', (pageIds) ->
 
                 # Publish Comments for Page That are Owned by the User or Unarchived
                 PageComments.find
-                    page: pageIds
+                    pageId: pageIds
 
                     $or: [
-                            user: @userId
+                            userId: @userId
                         ,
                             archived: false
                     ]
@@ -60,7 +60,7 @@ Meteor.publish 'pageComments', (pageIds) ->
             
             # Publish Comments for All Passed Pages That are Unarchived
             PageComments.find
-                page:
+                pageId:
                     $in: pageIds
 
                 archived: false
@@ -70,5 +70,5 @@ Meteor.publish 'pageComments', (pageIds) ->
 
             # Publish Comments for Page That are Unarchived
             PageComments.find
-                page: pageIds
+                pageId: pageIds
                 archived: false

@@ -1,6 +1,6 @@
 @PageMeta = new Mongo.Collection 'pageMeta'
 PageMeta.attachSchema new SimpleSchema
-    page:
+    pageId:
         type: String
         label: 'Page Reference'
 

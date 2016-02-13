@@ -31,7 +31,7 @@
             label: 'Page Meta'
             tableColumns: [
                     label: 'Page ID'
-                    name: 'page'
+                    name: 'pageId'
                 ,
                     label: 'Key'
                     name: 'key'
@@ -48,13 +48,39 @@
             label: 'Page Comments'
             tableColumns: [
                     label: 'Page ID'
-                    name: 'page'
+                    name: 'pageId'
                 ,
                     label: 'User ID'
-                    name: 'user'
+                    name: 'userId'
                 ,
-                    label: 'Comment'
-                    name: 'comment'
+                    label: 'Content'
+                    name: 'content'
+                ,
+                    label: 'Created At'
+                    name: 'createdAt'
+                ,
+                    label: 'Updated At'
+                    name: 'updatedAt'
+                ,
+                    label: 'Archived'
+                    name: 'archived'
+                ,
+                    label: 'ID'
+                    name: '_id'
+            ]
+
+        CommentHistories:
+            icon: 'comment'
+            label: 'Comment Histories'
+            tableColumns: [
+                    label: 'Comment ID'
+                    name: 'commentId'
+                ,
+                    label: 'User ID'
+                    name: 'userId'
+                ,
+                    label: 'Content'
+                    name: 'content'
                 ,
                     label: 'Created At'
                     name: 'createdAt'

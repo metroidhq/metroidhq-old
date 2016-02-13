@@ -5,11 +5,11 @@ Meteor.publish 'pageMeta', (pageIds) ->
 
         # Publish Meta for All Passed Pages
         PageMeta.find
-            page:
+            pageId:
                 $in: pageIds
 
     else
 
         # Publish Meta for Page
         PageMeta.find
-            page: pageIds
+            pageId: pageIds
