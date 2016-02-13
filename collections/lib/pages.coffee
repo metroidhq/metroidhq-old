@@ -1,12 +1,12 @@
 @Pages = new Mongo.Collection 'pages'
 Pages.attachSchema new SimpleSchema
-    slug:
-        type: String
-        label: 'Slug'
-
     title:
         type: String
         label: 'Title'
+
+    slug:
+        type: String
+        label: 'Slug'
 
     template:
         type: String
