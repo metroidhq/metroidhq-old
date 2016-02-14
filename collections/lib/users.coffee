@@ -1,88 +1,3 @@
-Schema.UserProfile = new SimpleSchema
-    firstName:
-        type: String
-        label: 'First Name'
-        optional: true
-
-    lastName:
-        type: String
-        label: 'Last Name'
-        optional: true
-
-    displayName:
-        type: String
-        label: 'Display Name'
-        allowedValues: [
-            'firstLast'
-            'first'
-            'firstLastInit'
-            'firstInitLast'
-            'firstInitLastInit'
-            'username'
-            'firstUsernameLast'
-        ]
-
-    title:
-        type: String
-        label: 'Title'
-        optional: true
-
-    bio:
-        type: String
-        label: 'Bio'
-        optional: true
-
-    birthday:
-        type: Date
-        label: 'Birthday'
-        optional: true
-
-    birthdayDisplay:
-        type: Boolean
-        label: 'Birthday Display'
-        defaultValue: false
-
-    websiteName:
-        type: String
-        label: 'Website Name'
-        optional: true
-
-    websiteUrl:
-        type: String
-        label: 'Website URL'
-        regEx: SimpleSchema.RegEx.Url
-        optional: true
-
-    posts:
-        type: Number
-        label: 'Posts'
-
-    gravatar:
-        type: Boolean
-        label: 'Gravatar'
-        defaultValue: true
-
-    avatar:
-        type: String
-        label: 'Avatar'
-        optional: true
-
-    signature:
-        type: String
-        label: 'Signature'
-        optional: true
-
-    lastSeen:
-        type: Date
-        label: 'Last Seen'
-        defaultValue: new Date()
-
-    timeZone:
-        type: Number
-        label: 'Time Zone'
-        optional: true
-
-
 Meteor.users.attachSchema new SimpleSchema
     username:
         type: String
@@ -112,8 +27,91 @@ Meteor.users.attachSchema new SimpleSchema
         defaultValue: false
 
     profile:
-        type: Schema.UserProfile
+        type: Object
         label: 'Profile'
+
+    'profile.firstName':
+        type: String
+        label: 'First Name'
+        optional: true
+
+    'profile.lastName':
+        type: String
+        label: 'Last Name'
+        optional: true
+
+    'profile.displayName':
+        type: String
+        label: 'Display Name'
+        allowedValues: [
+            'firstLast'
+            'first'
+            'firstLastInit'
+            'firstInitLast'
+            'firstInitLastInit'
+            'username'
+            'firstUsernameLast'
+        ]
+
+    'profile.title':
+        type: String
+        label: 'Title'
+        optional: true
+
+    'profile.bio':
+        type: String
+        label: 'Bio'
+        optional: true
+
+    'profile.birthday':
+        type: Date
+        label: 'Birthday'
+        optional: true
+
+    'profile.birthdayDisplay':
+        type: Boolean
+        label: 'Birthday Display'
+        defaultValue: false
+
+    'profile.websiteName':
+        type: String
+        label: 'Website Name'
+        optional: true
+
+    'profile.websiteUrl':
+        type: String
+        label: 'Website URL'
+        regEx: SimpleSchema.RegEx.Url
+        optional: true
+
+    'profile.posts':
+        type: Number
+        label: 'Posts'
+
+    'profile.gravatar':
+        type: Boolean
+        label: 'Gravatar'
+        defaultValue: true
+
+    'profile.avatar':
+        type: String
+        label: 'Avatar'
+        optional: true
+
+    'profile.signature':
+        type: String
+        label: 'Signature'
+        optional: true
+
+    'profile.lastSeen':
+        type: Date
+        label: 'Last Seen'
+        defaultValue: new Date()
+
+    'profile.timeZone':
+        type: Number
+        label: 'Time Zone'
+        optional: true
 
     createdAt:
         type: Date
