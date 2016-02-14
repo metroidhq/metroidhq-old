@@ -1,31 +1,4 @@
-Meteor.users.attachSchema new SimpleSchema
-    username:
-        type: String
-        label: 'Username'
-
-    emails:
-        type: Array
-        label: 'Emails'
-
-    'emails.$':
-        type: Object
-        label: 'Emails Object'
-
-    'emails.$.address':
-        type: String
-        label: 'Email Address'
-        regEx: SimpleSchema.RegEx.Email
-
-    'emails.$.verified':
-        type: Boolean
-        label: 'Email Verified'
-        defaultValue: false
-
-    'emails.$.primary':
-        type: Boolean
-        label: 'Primary Email'
-        defaultValue: false
-
+Schema.UserProfile = new SimpleSchema
     firstName:
         type: String
         label: 'First Name'
@@ -99,11 +72,6 @@ Meteor.users.attachSchema new SimpleSchema
         label: 'Signature'
         optional: true
 
-    createdAt:
-        type: Date
-        label: 'Created At'
-        defaultValue: new Date()
-
     lastSeen:
         type: Date
         label: 'Last Seen'
@@ -113,6 +81,44 @@ Meteor.users.attachSchema new SimpleSchema
         type: Number
         label: 'Time Zone'
         optional: true
+
+
+Meteor.users.attachSchema new SimpleSchema
+    username:
+        type: String
+        label: 'Username'
+
+    emails:
+        type: Array
+        label: 'Emails'
+
+    'emails.$':
+        type: Object
+        label: 'Emails Object'
+
+    'emails.$.address':
+        type: String
+        label: 'Email Address'
+        regEx: SimpleSchema.RegEx.Email
+
+    'emails.$.verified':
+        type: Boolean
+        label: 'Email Verified'
+        defaultValue: false
+
+    'emails.$.primary':
+        type: Boolean
+        label: 'Primary Email'
+        defaultValue: false
+
+    profile:
+        type: Schema.UserProfile
+        label: 'Profile'
+
+    createdAt:
+        type: Date
+        label: 'Created At'
+        defaultValue: new Date()
 
     services:
         type: Object

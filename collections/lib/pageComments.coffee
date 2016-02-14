@@ -17,9 +17,9 @@ PageComments.attachSchema new SimpleSchema
         label: 'Created At'
         defaultValue: new Date()
 
-    updatedAt:
+    modifiedAt:
         type: Date
-        label: 'Updated At'
+        label: 'Modified At'
         defaultValue: new Date()
 
     archived:

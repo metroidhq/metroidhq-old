@@ -59,8 +59,8 @@
                     label: 'Created At'
                     name: 'createdAt'
                 ,
-                    label: 'Updated At'
-                    name: 'updatedAt'
+                    label: 'Modified At'
+                    name: 'modifiedAt'
                 ,
                     label: 'Archived'
                     name: 'archived'
