@@ -2,12 +2,10 @@ Meteor.users.attachSchema new SimpleSchema
     username:
         type: String
         label: 'Username'
-        optional: true
 
     emails:
         type: Array
         label: 'Emails'
-        optional: true
 
     'emails.$':
         type: Object
@@ -21,18 +19,28 @@ Meteor.users.attachSchema new SimpleSchema
     'emails.$.verified':
         type: Boolean
         label: 'Email Verified'
+        defaultValue: false
 
-    firstName:
+    'emails.$.primary':
+        type: Boolean
+        label: 'Primary Email'
+        defaultValue: false
+
+    profile:
+        type: Object
+        label: 'Profile'
+
+    'profile.firstName':
         type: String
         label: 'First Name'
         optional: true
 
-    lastName:
+    'profile.lastName':
         type: String
         label: 'Last Name'
         optional: true
 
-    displayName:
+    'profile.displayName':
         type: String
         label: 'Display Name'
         allowedValues: [
@@ -45,70 +53,70 @@ Meteor.users.attachSchema new SimpleSchema
             'firstUsernameLast'
         ]
 
-    title:
+    'profile.title':
         type: String
         label: 'Title'
         optional: true
 
-    bio:
+    'profile.bio':
         type: String
         label: 'Bio'
         optional: true
 
-    birthday:
+    'profile.birthday':
         type: Date
         label: 'Birthday'
         optional: true
 
-    birthdayDisplay:
+    'profile.birthdayDisplay':
         type: Boolean
         label: 'Birthday Display'
         defaultValue: false
 
-    websiteName:
+    'profile.websiteName':
         type: String
         label: 'Website Name'
         optional: true
 
-    websiteUrl:
+    'profile.websiteUrl':
         type: String
         label: 'Website URL'
         regEx: SimpleSchema.RegEx.Url
         optional: true
 
-    posts:
+    'profile.posts':
         type: Number
         label: 'Posts'
 
-    gravatar:
+    'profile.gravatar':
         type: Boolean
         label: 'Gravatar'
         defaultValue: true
 
-    avatar:
+    'profile.avatar':
         type: String
         label: 'Avatar'
         optional: true
 
-    signature:
+    'profile.signature':
         type: String
         label: 'Signature'
+        optional: true
+
+    'profile.lastSeen':
+        type: Date
+        label: 'Last Seen'
+        defaultValue: new Date()
+
+    'profile.timeZone':
+        type: Number
+        label: 'Time Zone'
         optional: true
 
     createdAt:
         type: Date
         label: 'Created At'
         defaultValue: new Date()
-
-    lastSeen:
-        type: Date
-        label: 'Last Seen'
-        defaultValue: new Date()
-
-    timeZone:
-        type: Number
-        label: 'Time Zone'
-        optional: true
 
     services:
         type: Object

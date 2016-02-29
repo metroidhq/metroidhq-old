@@ -1,23 +1,28 @@
 @PageComments = new Mongo.Collection 'pageComments'
 PageComments.attachSchema new SimpleSchema
-    page:
+    pageId:
         type: String
         label: 'Page Reference'
 
-    user:
+    userId:
         type: String
         label: 'User Reference'
 
-    comment:
+    content:
         type: String
-        label: 'Comment'
+        label: 'Content'
 
     createdAt:
         type: Date
         label: 'Created At'
         defaultValue: new Date()
 
-    # count:
-    #     type: Number
-    #     label: 'Count'
-    #     optional: true
+    modifiedAt:
+        type: Date
+        label: 'Modified At'
+        defaultValue: new Date()
+
+    archived:
+        type: Boolean
+        label: 'Archived'
+        defaultValue: false

@@ -23,4 +23,5 @@ Pages.attachSchema new SimpleSchema
         defaultValue: 'public'
         allowedValues: [
             'public'
+            'admin'
         ]
