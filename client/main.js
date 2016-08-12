@@ -1,22 +1,31 @@
 import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
-
+import { Session } from 'meteor/session';
 import './main.html';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
+Template.body.helpers({
+    countdown () {
+        var endDate = 'Tue Aug 16 2016 12:00:00 GMT-0700 (PDT)';
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
+        function pad(num, size) {
+            var s = "0" + num;
+            return s.substr(s.length-size);
+        }
 
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
+        Session.set('timeleft', countdown(
+            null,
+            new Date(endDate),
+            (countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS)
+        ));
+
+
+        Meteor.setTimeout(function () {
+            Session.set('timeleft', countdown(
+                null,
+                new Date(endDate),
+                (countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS)
+            ));
+        }, 1000);
+
+        return pad(Session.get('timeleft').days, 2) + ':' + pad(Session.get('timeleft').hours, 2) + ':' + pad(Session.get('timeleft').minutes, 2) + ':' + pad(Session.get('timeleft').seconds, 2);
+    },
 });

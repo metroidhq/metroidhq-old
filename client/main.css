@@ -1,1 +1,38 @@
-/* CSS declarations go here */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,600);
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: white;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    background-color: #42ca67;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+svg {
+    width: 220px;
+    height: 198px;
+}
+
+.fa {   
+    color: #299346;
+}
+
+.fa:hover { 
+    color: #175428;
+}
