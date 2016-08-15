@@ -31,13 +31,15 @@ Template.body.helpers({
 });
 
 Template.body.onRendered(function () {
-    if (process.env.ROOT_URL === 'http://metroidhq.com') {
-        var suffix = '';
-    } else if (process.env.ROOT_URL === 'http://staging.metroidhq.com') {
-        var suffix = '-staging';
-    } else {
-        var suffix = '-dev';
-    }
+    Meteor.call('getRootUrl', function (e,r) {
+        if (r === 'http://metroidhq.com') {
+            var suffix = '';
+        } else if (r === 'http://staging.metroidhq.com') {
+            var suffix = '-staging';
+        } else {
+            var suffix = '-dev';
+        }
 
-    $('head').append($(document.createElement('link')).attr('rel', 'shortcut icon').attr('type', 'image/x-icon').attr('href', '/favicon' + suffix + '.ico'));
+        $('head').append($(document.createElement('link')).attr('rel', 'shortcut icon').attr('type', 'image/x-icon').attr('href', '/favicon' + suffix + '.ico'));
+    });
 });
