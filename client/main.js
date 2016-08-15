@@ -3,7 +3,7 @@ import { Session } from 'meteor/session';
 import './main.html';
 
 Template.body.helpers({
-    countdown () {
+    countdown: function () {
         var endDate = 'Tue Aug 16 2016 12:00:00 GMT-0700 (PDT)';
 
         function pad(num, size) {
