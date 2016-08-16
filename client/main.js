@@ -4,7 +4,7 @@ import './main.html';
 
 Template.body.helpers({
     countdown: function () {
-        var endDate = 'Wed Aug 17 2016 00:00:00 GMT-0700 (PDT)';
+        var endDate = 'Tue Aug 16 2016 23:59:59 GMT-0700 (PDT)';
 
         function pad(num, size) {
             var s = "0" + num;
