@@ -1,0 +1,213 @@
+#sidebar {
+  width: 242px;
+  background-color: $green;
+  position: relative;
+  transition: width $transition;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  .head {
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .logo {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .title {
+      position: absolute;
+      top: 3px;
+      left: 70px;
+      font-size: 28px;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: white;
+      white-space: nowrap;
+      opacity: 1;
+      pointer-events: none;
+      transition: all $transition;
+
+      @include noselect;
+
+      span {
+        margin-left: -8px;
+        font-weight: 200;
+      }
+    }
+
+    .tagline {
+      position: absolute;
+      top: 40px;
+      left: 72px;
+      text-align: center;
+      font-size: 11px;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 400;
+      color: $green-lighter;
+      white-space: nowrap;
+      opacity: 1;
+      pointer-events: none;
+      transition: all $transition;
+
+      @include noselect;
+    }
+  }
+
+  nav {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+
+    .menu {
+      width: 242px;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 242px;
+      background-color: $green;
+      transition: left $transition;
+      z-index: 1;
+
+      &.active {
+        left: 0px;
+        z-index: 2;
+      }
+
+      &.overhead {
+        left: -242px;
+      }
+
+      .title {
+        padding-left: $medium;
+        padding-right: $medium;
+        padding-top: $small;
+        padding-bottom: $small;
+        position: relative;
+        display: block;
+        font-size: $fontlarge;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        line-height: $fontlarge + 6px;
+        white-space: nowrap;
+        color: white;
+
+        @include noselect;
+
+        .icon {
+          width: 30px;
+          margin-right: 6px;
+          font-size: $fontlarge + 6px;
+          color: $green-light;
+          text-align: center;
+          transition: margin-left $transition;
+        }
+      }
+
+      .item {
+        padding-left: $medium;
+        padding-right: $medium;
+        padding-top: $small;
+        padding-bottom: $small;
+        position: relative;
+        display: block;
+        font-size: $fontmedium;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        line-height: $fontmedium + 6px;
+        white-space: nowrap;
+        color: white;
+        border-bottom: 1px solid $green-dark;
+
+        @include noselect;
+
+        .icon {
+          width: 30px;
+          margin-right: 6px;
+          font-size: $fontmedium + 6px;
+          color: $green-light;
+          text-align: center;
+        }
+
+        .fa-angle-double-right, .fa-angle-double-left {
+          position: absolute;
+          top: 16px;
+          right: 15px;
+          color: $green-light;
+        }
+
+        &.large {
+          font-size: $fontlarge;
+          line-height: $fontlarge + 6px;
+
+          .icon {
+            font-size: $fontlarge + 6px;
+          }
+
+          .fa-angle-double-right, .fa-angle-double-left {
+            top: 16px;
+            right: 15px;
+          }
+        }
+
+        &:hover {
+          background-color: $green-dark;
+          cursor: pointer;
+        }
+
+        &.last {
+          border-bottom: none;
+        }
+
+        &.active {
+          background-color: $highlight;
+          text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+
+          .fa {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .foot {
+    height: 100px;
+    padding: 20px;
+    flex-shrink: 0;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+
+    #register {
+      position: absolute;
+      top: 56px;
+      left: 150px;
+      width: 72px;
+      border-radius: 2px;
+      background-color: #FFF;
+      padding: 5px 0px;
+      font-size: 12px;
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $highlight;
+        color: #FFF;
+        text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}

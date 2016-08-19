@@ -1,0 +1,17 @@
+if hasDiscussion
+  #discussion
+    #stats
+      i.fa.fa-comments
+      .title Discussion
+
+    #comments
+      +comments
+
+    #comment
+      if logged
+        +addComment
+
+      else
+        #unlogged
+          i.fa.fa-ban
+          | You must be logged in to participate in discussions.
