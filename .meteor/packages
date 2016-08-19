@@ -35,3 +35,6 @@ constellation:position         # Set Constellation position
 constellation:session          # Sev Session sniffing
 constellation:subscriptions    # View current subscriptions
 shell-server
+
+# And Also
+wizonesolutions:canonical      # Redirects www
