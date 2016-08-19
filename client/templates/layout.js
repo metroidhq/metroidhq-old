@@ -2,7 +2,7 @@ Template.layout.onRendered(function () {
   Meteor.call('getRootUrl', function (err, res) {
     let suffix = '';
 
-    if (res === 'http://www.metroidhq.com') {
+    if (res === 'http://metroidhq.com') {
       suffix = '';
     } else if (res === 'http://staging.metroidhq.com') {
       suffix = '-staging';

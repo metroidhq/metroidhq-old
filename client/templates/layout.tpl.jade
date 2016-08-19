@@ -4,10 +4,10 @@
   
   #main
     #header
-      {{> Template.dynamic template=header}}
+      +Template.dynamic(template=header)
     
     #body
       +discussion
 
       #content
-        {{> Template.dynamic template=content}}
+        +Template.dynamic(template=content)

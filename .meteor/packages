@@ -1,40 +1,40 @@
 # Meteor
-meteor-base@1.0.4                    # Packages every Meteor app needs to have
-mongo@1.1.11                          # The database Meteor supports right now
-reactive-var@1.0.10                   # Reactive variable for tracker
-tracker@1.1.0                        # Meteor's client-side reactive programming library
+meteor-base@1.0.4               # Packages every Meteor app needs to have
+mongo@1.1.11                    # The database Meteor supports right now
+reactive-var@1.0.10             # Reactive variable for tracker
+tracker@1.1.0                   # Meteor's client-side reactive programming library
 
 # Compilers
-blaze-html-templates@1.0.4           # Compile .html files into Meteor Blaze views
-mquandalle:jade                # HTML preprocessor
-#fourseven:scss                 # CSS preprocessor
-es5-shim@4.6.14                       # ECMAScript 5 compatibility for older browsers
-ecmascript@0.5.8                     # Enable ECMAScript2015+ syntax in app code
+blaze-html-templates@1.0.4      # Compile .html files into Meteor Blaze views
+mquandalle:jade                 # HTML preprocessor
+fourseven:scss                  # CSS preprocessor
+es5-shim@4.6.14                 # ECMAScript 5 compatibility for older browsers
+ecmascript@0.5.8                # Enable ECMAScript2015+ syntax in app code
 
 # Minifiers
-standard-minifier-css@1.2.0          # CSS minifier run for production mode
-standard-minifier-js@1.2.0           # JS minifier run for production mode
+standard-minifier-css@1.2.0     # CSS minifier run for production mode
+standard-minifier-js@1.2.0      # JS minifier run for production mode
 
 
 # Utilities
-kadira:flow-router             # Makes URLs happen
-kadira:blaze-layout            # Template render manager
-aldeed:collection2             # Database schemas
-momentjs:moment                # Time stuff
+kadira:flow-router              # Makes URLs happen
+kadira:blaze-layout             # Template render manager
+aldeed:collection2              # Database schemas
+momentjs:moment                 # Time stuff
 
 # Style Libraries
-fortawesome:fontawesome        # Awesome Fonts
+fortawesome:fontawesome         # Awesome Fonts
 
 # Accounts
-accounts-password@1.3.0
-useraccounts:unstyled
+useraccounts:unstyled           # Core user accounts package
+accounts-password@1.3.0         # Password functionality for users
 
 # Development
-constellation:console          # Dev Mongo sniffing
-constellation:position         # Set Constellation position
-constellation:session          # Sev Session sniffing
-constellation:subscriptions    # View current subscriptions
+constellation:console           # Dev Mongo sniffing
+constellation:position          # Set Constellation position
+constellation:session           # Sev Session sniffing
+constellation:subscriptions     # View current subscriptions
 shell-server
 
-# And Also
-wizonesolutions:canonical      # Redirects www
+# SEO
+wizonesolutions:canonical       # Redirects www to root
