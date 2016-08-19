@@ -1,0 +1,49 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node',
+1 verbose cli   '/Users/Elias/.meteor/packages/meteor-tool/1.4.1/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'fourseven:scss' ]
+2 info using npm@3.10.6
+3 info using node@v4.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData fourseven:scss
+8 silly fetchPackageMetaData Error: Unsupported URL Type: fourseven:scss
+8 silly fetchPackageMetaData     at parseUrl (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:186:13)
+8 silly fetchPackageMetaData     at npa (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:79:12)
+8 silly fetchPackageMetaData     at module.exports (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/realize-package-specifier/index.js:12:15)
+8 silly fetchPackageMetaData     at fetchPackageMetadata (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/fetch-package-metadata.js:54:12)
+8 silly fetchPackageMetaData     at fetchMetadataWithVersion (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install/deps.js:220:14)
+8 silly fetchPackageMetaData     at /Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install/deps.js:233:16
+8 silly fetchPackageMetaData     at /Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+8 silly fetchPackageMetaData     at Array.forEach (native)
+8 silly fetchPackageMetaData     at /Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+8 silly fetchPackageMetaData     at Array.forEach (native)
+8 silly fetchPackageMetaData  error for fourseven:scss [Error: Unsupported URL Type: fourseven:scss]
+9 silly rollbackFailedOptional Starting
+10 silly rollbackFailedOptional Finishing
+11 silly runTopLevelLifecycles Starting
+12 silly runTopLevelLifecycles Finishing
+13 silly install printInstalled
+14 verbose stack Error: Unsupported URL Type: fourseven:scss
+14 verbose stack     at parseUrl (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:186:13)
+14 verbose stack     at npa (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:79:12)
+14 verbose stack     at module.exports (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/realize-package-specifier/index.js:12:15)
+14 verbose stack     at fetchPackageMetadata (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/fetch-package-metadata.js:54:12)
+14 verbose stack     at fetchMetadataWithVersion (/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install/deps.js:220:14)
+14 verbose stack     at /Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install/deps.js:233:16
+14 verbose stack     at /Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+14 verbose stack     at Array.forEach (native)
+14 verbose stack     at /Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+14 verbose stack     at Array.forEach (native)
+15 verbose cwd /Users/Elias/mhqtemp
+16 error Darwin 15.5.0
+17 error argv "/Users/Elias/.meteor/packages/meteor-tool/.1.4.1.w7wcti++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node" "/Users/Elias/.meteor/packages/meteor-tool/1.4.1/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "--save" "fourseven:scss"
+18 error node v4.5.0
+19 error npm  v3.10.6
+20 error Unsupported URL Type: fourseven:scss
+21 error If you need help, you may report this error at:
+21 error     <https://github.com/npm/npm/issues>
+22 verbose exit [ 1, true ]
