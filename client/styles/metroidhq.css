@@ -1,0 +1,467 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,200);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+#metroidhq {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; }
+  #metroidhq #main {
+    background-color: white;
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; }
+    #metroidhq #main #body {
+      width: 100%;
+      overflow: hidden;
+      flex-grow: 1;
+      flex-shrink: 1;
+      display: flex; }
+
+#login-dropdown-list {
+  top: -146px;
+  left: 16px; }
+
+#beta {
+  position: absolute;
+  top: 0px;
+  left: -70px;
+  padding: 4px 80px;
+  background-color: #FFF;
+  color: #000;
+  opacity: 0.5;
+  transform: rotate(-25deg);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  z-index: 99;
+  text-transform: uppercase; }
+
+#sidebar {
+  width: 242px;
+  background-color: #42ca67;
+  position: relative;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0; }
+  #sidebar .head {
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0; }
+    #sidebar .head:hover {
+      cursor: pointer; }
+    #sidebar .head .logo {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 50px;
+      height: 50px; }
+    #sidebar .head .title {
+      position: absolute;
+      top: 3px;
+      left: 70px;
+      font-size: 28px;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: white;
+      white-space: nowrap;
+      opacity: 1;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      #sidebar .head .title span {
+        margin-left: -8px;
+        font-weight: 200; }
+    #sidebar .head .tagline {
+      position: absolute;
+      top: 40px;
+      left: 72px;
+      text-align: center;
+      font-size: 11px;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 400;
+      color: #ccf1d6;
+      white-space: nowrap;
+      opacity: 1;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+  #sidebar nav {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative; }
+    #sidebar nav .menu {
+      width: 242px;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 242px;
+      background-color: #42ca67;
+      transition: left 0.3s ease;
+      z-index: 1; }
+      #sidebar nav .menu.active {
+        left: 0px;
+        z-index: 2; }
+      #sidebar nav .menu.overhead {
+        left: -242px; }
+      #sidebar nav .menu .title {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        display: block;
+        font-size: 18px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        line-height: 24px;
+        white-space: nowrap;
+        color: white;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        #sidebar nav .menu .title .icon {
+          width: 30px;
+          margin-right: 6px;
+          font-size: 24px;
+          color: #88dd9f;
+          text-align: center;
+          transition: margin-left 0.3s ease; }
+      #sidebar nav .menu .item {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        display: block;
+        font-size: 14px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        line-height: 20px;
+        white-space: nowrap;
+        color: white;
+        border-bottom: 1px solid #3ebe62;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        #sidebar nav .menu .item .icon {
+          width: 30px;
+          margin-right: 6px;
+          font-size: 20px;
+          color: #88dd9f;
+          text-align: center; }
+        #sidebar nav .menu .item .fa-angle-double-right, #sidebar nav .menu .item .fa-angle-double-left {
+          position: absolute;
+          top: 16px;
+          right: 15px;
+          color: #88dd9f; }
+        #sidebar nav .menu .item.large {
+          font-size: 18px;
+          line-height: 24px; }
+          #sidebar nav .menu .item.large .icon {
+            font-size: 24px; }
+          #sidebar nav .menu .item.large .fa-angle-double-right, #sidebar nav .menu .item.large .fa-angle-double-left {
+            top: 16px;
+            right: 15px; }
+        #sidebar nav .menu .item:hover {
+          background-color: #3ebe62;
+          cursor: pointer; }
+        #sidebar nav .menu .item.last {
+          border-bottom: none; }
+        #sidebar nav .menu .item.active {
+          background-color: #eac122;
+          text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4); }
+          #sidebar nav .menu .item.active .fa {
+            color: white; }
+  #sidebar .foot {
+    height: 100px;
+    padding: 20px;
+    flex-shrink: 0;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif; }
+    #sidebar .foot #register {
+      position: absolute;
+      top: 56px;
+      left: 150px;
+      width: 72px;
+      border-radius: 2px;
+      background-color: #FFF;
+      padding: 5px 0px;
+      font-size: 12px;
+      text-align: center; }
+      #sidebar .foot #register:hover {
+        cursor: pointer;
+        background-color: #eac122;
+        color: #FFF;
+        text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4); }
+
+#header {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  background-position: top left;
+  background-repeat: no-repeat;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex; }
+  .collapsed #header {
+    height: 70px; }
+  #header .icon {
+    width: 100px;
+    margin-left: 30px;
+    font-size: 60px;
+    transition: font-size 0.3s ease, margin-left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.8); }
+  #header .title {
+    width: 100%;
+    position: relative; }
+    #header .title h1 {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 32px;
+      transition: font-size 0.3s ease, top 0.3s ease, left 0.3s ease;
+      color: #FFF;
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.8); }
+    #header .title h2 {
+      position: absolute;
+      top: 54px;
+      left: 20px;
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px;
+      transition: font-size 0.3s ease, top 0.3s ease, left 0.3s ease;
+      color: #FFF;
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.8); }
+
+#content {
+  padding: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Titillium Web', sans-serif; }
+  #content h3 {
+    padding-bottom: 12px; }
+  #content p {
+    padding-bottom: 12px; }
+
+#discussion {
+  background-color: #f2f2f2;
+  width: 420px;
+  font-family: 'Titillium Web', sans-serif;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column; }
+  #discussion #stats {
+    height: 47px;
+    background-color: #e6e6e6;
+    flex-grow: 0;
+    flex-shrink: 0; }
+    #discussion #stats i {
+      position: absolute;
+      left: 20px;
+      line-height: 47px;
+      color: #42ca67; }
+    #discussion #stats .title {
+      position: absolute;
+      left: 44px;
+      line-height: 47px;
+      color: #999999; }
+  #discussion #comments {
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end; }
+    #discussion #comments .spacer {
+      flex-grow: 1;
+      flex-shrink: 1; }
+    #discussion #comments .comment {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      display: flex;
+      border-top: 1px solid #e6e6e6; }
+      #discussion #comments .comment .info {
+        width: 50px;
+        padding-right: 8px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column; }
+        #discussion #comments .comment .info .avatar {
+          width: 40px;
+          height: 40px;
+          margin-top: 6px;
+          background-color: #42ca67;
+          font-size: 28px;
+          text-transform: uppercase;
+          color: #FFF;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 2px; }
+      #discussion #comments .comment .content {
+        flex-grow: 1;
+        flex-shrink: 1;
+        display: flex;
+        flex-direction: column; }
+        #discussion #comments .comment .content .header {
+          padding-bottom: 2px;
+          flex-grow: 0;
+          flex-shrink: 0;
+          display: flex; }
+          #discussion #comments .comment .content .header .username {
+            font-size: 14px;
+            font-weight: 600; }
+          #discussion #comments .comment .content .header .timestamp {
+            text-align: right;
+            flex-grow: 1;
+            flex-shrink: 1;
+            color: #bfbfbf;
+            font-size: 12px; }
+        #discussion #comments .comment .content .body {
+          font-size: 12px; }
+  #discussion #nocommentsicon {
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    font-size: 380px;
+    color: #FFF;
+    z-index: 1; }
+  #discussion #nocomments {
+    padding-bottom: 20px;
+    z-index: 2; }
+  #discussion #comment {
+    padding: 20px;
+    background-color: #e6e6e6;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3; }
+    #discussion #comment #addcomment {
+      height: 32px;
+      margin-right: 12px;
+      outline: none;
+      border: 1px solid #e6e6e6;
+      padding: 8px 10px;
+      flex-grow: 1;
+      flex-shrink: 0; }
+      #discussion #comment #addcomment:focus {
+        border-color: #42ca67; }
+    #discussion #comment #submitcomment {
+      height: 32px;
+      padding: 0px 10px;
+      border: 1px solid #e6e6e6;
+      background-color: #CCC;
+      font-size: 14px;
+      line-height: 32px; }
+      #discussion #comment #submitcomment:hover {
+        cursor: pointer;
+        background-color: #42ca67; }
+      #discussion #comment #submitcomment.disabled {
+        opacity: 0.7; }
+        #discussion #comment #submitcomment.disabled:hover {
+          cursor: no-drop;
+          background-color: #CCC; }
+    #discussion #comment #unlogged {
+      width: 100%;
+      font-size: 14px;
+      text-align: center;
+      color: #999; }
+      #discussion #comment #unlogged i {
+        margin-right: 5px; }
+
+#signout {
+  width: 100%;
+  height: 28px;
+  background-color: #FFF;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 2px; }
+  #signout:hover {
+    cursor: pointer;
+    background-color: #eac122;
+    color: #FFF;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4); }
+
+.user {
+  padding-bottom: 8px; }
+
+.foot .at-form {
+  position: relative; }
+  .foot .at-form .at-title {
+    display: none; }
+  .foot .at-form label {
+    display: none; }
+  .foot .at-form #at-pwd-form .at-input input {
+    width: 120px;
+    padding: 8px 10px;
+    border: 1px solid #42ca67;
+    border-radius: 3px;
+    outline: none; }
+    .foot .at-form #at-pwd-form .at-input input#at-field-username_and_email {
+      margin-bottom: 4px; }
+    .foot .at-form #at-pwd-form .at-input input:focus {
+      border-color: black; }
+  .foot .at-form #at-btn {
+    position: absolute;
+    top: 1px;
+    left: 130px;
+    width: 72px;
+    border: none;
+    border-radius: 2px;
+    background-color: #FFF;
+    padding: 8px 0px; }
+    .foot .at-form #at-btn:hover {
+      cursor: pointer;
+      background-color: #eac122;
+      color: #FFF;
+      text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4); }
+  .foot .at-form .at-signup-link {
+    display: none; }
+  .foot .at-form .at-error {
+    position: absolute;
+    top: -24px;
+    font-size: 14px;
+    color: #FFF; }
+
+/*# sourceMappingURL=metroidhq.css.map */
