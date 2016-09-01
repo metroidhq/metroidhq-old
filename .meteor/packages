@@ -6,7 +6,7 @@
 
 # Meteor
 meteor-base@1.0.4               # Packages every Meteor app needs to have
-mongo@1.1.11                    # The database Meteor supports right now
+mongo@1.1.12                    # The database Meteor supports right now
 reactive-var@1.0.10             # Reactive variable for tracker
 tracker@1.1.0                   # Meteor's client-side reactive programming library
 
@@ -42,7 +42,7 @@ constellation:session           # Sev Session sniffing
 constellation:subscriptions     # View current subscriptions
 babrahams:temple                # View current templates
 jboulhous:dev                   # Allows for dev-only code
-shell-server
+shell-server@0.2.1
 
 # Testing
 mike:mocha                      # Mocha Velocity testing framework
