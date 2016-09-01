@@ -4,44 +4,48 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-# Meteor Packages
-meteor-base                  # Packages every Meteor app needs to have
-mongo                        # The database Meteor supports right now
-session                      # Client-side reactive dictionary for your app
-tracker                      # Meteor's client-side reactive programming library
-es5-shim                     # ECMAScript 5 compatibility for older browsers.
-ecmascript                   # Enable ECMAScript2015+ syntax in app code
+# Meteor
+meteor-base@1.0.4               # Packages every Meteor app needs to have
+mongo@1.1.11                    # The database Meteor supports right now
+reactive-var@1.0.10             # Reactive variable for tracker
+tracker@1.1.0                   # Meteor's client-side reactive programming library
 
 # Compilers
-blaze-html-templates         # Compile .html files into Meteor Blaze views
-standard-minifiers           # JS/CSS minifiers run for production mode
-coffeescript                 # Javascript preprocessor
-fourseven:scss               # CSS preprocessor
-mquandalle:jade              # HTML preprocessor
+blaze-html-templates@1.0.4      # Compile .html files into Meteor Blaze views
+mquandalle:jade                 # HTML preprocessor
+csats:scss                      # CSS preprocessor (temp)
+es5-shim@4.6.14                 # ECMAScript 5 compatibility for older browsers
+ecmascript@0.5.8                # Enable ECMAScript2015+ syntax in app code
+
+# Minifiers
+standard-minifier-css@1.2.0     # CSS minifier run for production mode
+standard-minifier-js@1.2.0      # JS minifier run for production mode
+
 
 # Utilities
-kadira:flow-router           # Makes URLs happen
-kadira:blaze-layout          # Template render manager
-aldeed:collection2           # Defines database schemas
-meteorhacks:fast-render      # Renders initial content BLAZEing fast. ha.
-momentjs:moment              # Relational time
-sach:flow-db-admin           # Flow-Router version of the admin panel
+kadira:flow-router              # Makes URLs happen
+kadira:blaze-layout             # Template render manager
+aldeed:collection2              # Database schemas
+momentjs:moment                 # Relational time
 
 # Style Libraries
-fortawesome:fontawesome      # Awesome Fonts
+fortawesome:fontawesome         # Awesome Fonts
 
-# Accounts & management
-accounts-password            # Enables passwords
-useraccounts:bootstrap       # Styles account feilds for bootstrap
-useraccounts:flow-routing    # Routes login pages through Flow-Router
+# Accounts
+useraccounts:unstyled           # Core user accounts package
+accounts-password@1.3.0         # Password functionality for users
 
 # Development
-constellation:console        # Dev Mongo sniffing
-constellation:position       # Set Constellation position
-constellation:session        # Sev Session sniffing
-constellation:subscriptions  # View current subscriptions
-babrahams:temple             # View current templates
-jboulhous:dev                # Allows for dev-only code
+constellation:console           # Dev Mongo sniffing
+constellation:position          # Set Constellation position
+constellation:session           # Sev Session sniffing
+constellation:subscriptions     # View current subscriptions
+babrahams:temple                # View current templates
+jboulhous:dev                   # Allows for dev-only code
+shell-server
 
 # Testing
-mike:mocha                   # Mocha Velocity testing framework
+mike:mocha                      # Mocha Velocity testing framework
+
+# SEO
+wizonesolutions:canonical       # Redirects www to root
