@@ -1,3 +1,9 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
 # Meteor
 meteor-base@1.0.4               # Packages every Meteor app needs to have
 mongo@1.1.11                    # The database Meteor supports right now
@@ -20,7 +26,7 @@ standard-minifier-js@1.2.0      # JS minifier run for production mode
 kadira:flow-router              # Makes URLs happen
 kadira:blaze-layout             # Template render manager
 aldeed:collection2              # Database schemas
-momentjs:moment                 # Time stuff
+momentjs:moment                 # Relational time
 
 # Style Libraries
 fortawesome:fontawesome         # Awesome Fonts
@@ -34,7 +40,12 @@ constellation:console           # Dev Mongo sniffing
 constellation:position          # Set Constellation position
 constellation:session           # Sev Session sniffing
 constellation:subscriptions     # View current subscriptions
+babrahams:temple                # View current templates
+jboulhous:dev                   # Allows for dev-only code
 shell-server
+
+# Testing
+mike:mocha                      # Mocha Velocity testing framework
 
 # SEO
 wizonesolutions:canonical       # Redirects www to root
