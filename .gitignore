@@ -1,1 +1,7 @@
 .meteor/local
+.meteor/meteorite
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+npm-debug.log

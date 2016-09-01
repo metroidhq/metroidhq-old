@@ -1,0 +1,54 @@
+#header {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  background-position: top left;
+  background-repeat: no-repeat;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+
+  .collapsed & {
+    height: 70px;
+  }
+
+  .icon {
+    width: 100px;
+    margin-left: 30px;
+    font-size: 60px;
+    transition: font-size $transition, margin-left $transition;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 0 3px rgba(0,0,0,.8), 0 0 10px rgba(0,0,0,.8);
+  }
+
+  .title {
+    width: 100%;
+    position: relative;
+
+    h1 {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 32px;
+      transition: font-size $transition, top $transition, left $transition;
+      color: #FFF;
+      text-shadow: 0 0 3px rgba(0,0,0,.8), 0 0 10px rgba(0,0,0,.8);
+    }
+
+    h2 {
+      position: absolute;
+      top: 54px;
+      left: 20px;
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 16px;
+      transition: font-size $transition, top $transition, left $transition;
+      color: #FFF;
+      text-shadow: 0 0 3px rgba(0,0,0,.8), 0 0 10px rgba(0,0,0,.8);
+    }
+  }
+}
