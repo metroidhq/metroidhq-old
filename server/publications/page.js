@@ -1,5 +1,4 @@
-Meteor.publish('page', function(slug){
-  return Pages.find({
-    slug: slug
-  });
-});
+import { Meteor } from 'meteor/meteor';
+import Pages from '../../collections/pages';
+
+Meteor.publish('page', (slug) => Pages.find({ slug }));

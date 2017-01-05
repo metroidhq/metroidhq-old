@@ -1,5 +1,7 @@
+import { Meteor } from 'meteor/meteor';
+
 Meteor.methods({
-  getRootUrl: function() {
+  getRootUrl() {
     return process.env.ROOT_URL;
-  }
+  },
 });

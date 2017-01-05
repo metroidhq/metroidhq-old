@@ -1,14 +1,18 @@
+import { Meteor } from 'meteor/meteor';
+import Comments from '../../collections/comments';
+
 Meteor.methods({
-  addComment: function(comment, userName, pageId) {
+  addComment(comment, userName, pageId) {
     if (this.userId) {
       const newComment = {
-        pageId: pageId,
+        pageId,
         userId: this.userId,
-        userName: userName,
+        userName,
         content: comment,
-        createdAtMS: Date.now()
-      }
+        createdAtMS: Date.now(),
+      };
+
       Comments.insert(newComment);
     }
-  }
+  },
 });

@@ -9,6 +9,10 @@
   },
   "dependencies": {
     "bcrypt": "^0.8.7",
-    "meteor-node-stubs": "~0.2.0"
+    "eslint": "~2.2.0",
+    "eslint-config-airbnb": "~6.0.2",
+    "eslint-plugin-meteor": "~4.0.1",
+    "meteor-node-stubs": "~0.2.0",
+    "simpl-schema": "~0.0.4"
   }
 }

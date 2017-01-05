@@ -1,5 +1,7 @@
+import { Meteor } from 'meteor/meteor';
+
 Meteor.methods({
-  "userExists": function(username){
-    return !!Meteor.users.findOne({username: username});
+  userExists(username) {
+    return !!Meteor.users.findOne({ username });
   },
 });

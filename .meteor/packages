@@ -25,7 +25,7 @@ standard-minifier-js@1.2.0      # JS minifier run for production mode
 # Utilities
 kadira:flow-router              # Makes URLs happen
 kadira:blaze-layout             # Template render manager
-aldeed:collection2              # Database schemas
+aldeed:collection2-core         # Database schemas
 momentjs:moment                 # Relational time
 
 # Style Libraries

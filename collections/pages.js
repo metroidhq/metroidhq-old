@@ -1,40 +1,45 @@
-this.Pages = new Mongo.Collection('pages');
+import SimpleSchema from 'simpl-schema';
+import Mongo from 'meteor/mongo';
+
+const Pages = new Mongo.Collection('pages');
 
 Pages.attachSchema(new SimpleSchema({
   slug: {
     type: String,
-    label: 'Slug'
+    label: 'Slug',
   },
   title: {
     type: String,
-    label: 'Title'
+    label: 'Title',
   },
   tagline: {
     type: String,
-    label: 'Tagline'
+    label: 'Tagline',
   },
   icon: {
     type: String,
-    label: 'Icon'
+    label: 'Icon',
   },
   banner: {
     type: String,
     label: 'Banner Image',
-    optional: true
+    optional: true,
   },
   template: {
     type: String,
-    label: 'Template'
+    label: 'Template',
   },
   discussion: {
     type: Boolean,
     label: 'Discussion',
-    defaultValue: false
+    defaultValue: false,
   },
   access: {
     type: String,
     label: 'Access',
     defaultValue: 'public',
-    allowedValues: ['public', 'admin']
-  }
+    allowedValues: ['public', 'admin'],
+  },
 }));
+
+export default Pages;

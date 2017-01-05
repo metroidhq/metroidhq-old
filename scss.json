@@ -1,5 +1,3 @@
 {
-    // "useIndex": true,
-    // "indexFilePath": "client/sass/main.sass",
-    "enableAutoprefixer": true
+  "enableAutoprefixer": true
 }
